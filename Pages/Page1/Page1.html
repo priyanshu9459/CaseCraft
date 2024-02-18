@@ -1,0 +1,32 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<html>
+ <head>
+  
+  <link rel="stylesheet" href="Page1.css">
+ </head>
+ <body onload="load();">
+  <h1>
+   Text Converter
+  </h1><div align="center">
+   <div style="float: centre; margin-centre: 10vw;"><div style="display: inline-block;"> Style <br /> <div align="center"><select id="style" name="style" onchange="output()" style="margin-centre: 10; width: 40vw; height: 5vw;"> <option>Circle</option> <option>Circle (Negative)</option> <option>Squared</option> <option>Squared (Negative)</option> <option>Squared (Emoji)</option> <option>Fullwidth</option> <option>Small</option> <option>Bold</option> <option>Bold Italic</option> <option>Strikethrough</option> <option>Strikethrough (Waving)</option> <option>Underline</option> <option>Upside down</option> <option>Sans Serif</option> <option>Sans Serif Bold</option> <option>Sans Serif Bold Italic</option> <option>Sans Serif Italic</option> <option>Monspace</option> <option>Double Underline</option> <option>Overline</option> <option>Double Overline</option> <option>Slashed</option> <option>Slashed (Long)</option> <option>Script Bold</option> <option>Fraktur Bold</option> <option>Double Struck</option> <option>Parenthesized</option> <option>Bubbles</option> <option>Bubbles (Crossed)</option> <option>Boxed</option> <option>Diamonds</option> </select> </div>
+
+<div align="center">
+   <div style="float: centre; margin-centre: 10vw;">
+    
+     Input
+    <br />
+
+    <textarea id="input" oninput="output()" style="height: 20vh; width: 40vw;" type="text"></textarea>
+   </div><br />
+<div style="float: centre; margin-centre: 10vw;"> 
+
+Output <br />
+ <textarea id="output" style="height: 20vh; width: 40vw;" type="text"></textarea>
+
+<div><button onclick="copyText()">Copy Text</button>
+</div>
+<script type="module" src="./Page1.js"></script>
+</div>
+
+ </body>
+</html>
